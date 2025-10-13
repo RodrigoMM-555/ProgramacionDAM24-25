@@ -1,0 +1,98 @@
+1.
+En esta actividad se usan funciones de excepcion como try y except para evitar que al calcular la raiz
+cuadrada de un numero el programa colapse cuando el usuario cometa un error al introducior un valor. 
+Para ello crearemos soluciones a todos los casos excepcionales que se nos ocurran.
+
+2.
+Para la comprovacion de errores usaremos los metodos try y except ademas de los condicionales if y else.
+El if y else ya lo conocemos y mas que para evitar erroes se usa para diferenciar casos.
+```
+edad=47
+if edad==47:
+	print("Tienes 47 años")
+else:
+	print("No tienes 47 años)
+```
+
+Por otro aldo try y except funcionan en caso de que hallan errores. Intentado lo que hay dentro de try y en el
+caso de haber error continuar con lo que hay en except sin finalizar el programa.
+```
+try:
+	resultado=3/0
+except:
+	print("No se pudo calcular")
+``` 
+
+3.
+Los errores mas comunes en este tipo de ejercicios sulen ser los de sintaxis, olvidarse de los dos puntos 
+despues de un try, except, else o if, alguna coma o parentesis. Tambien hay errores con el tipo de variable
+si es una cadena o un numero. Aunque este ultimo error se soluciona durante el ejercicio.
+
+
+Esta seria la funcion documentada
+'''
+def hazRaiz(numero):
+    
+    '''
+    Funcion de raiz
+    Entradas: Valor que se espera que sea numerico
+    Salidas: Resultado de la raiz con numero (o cero si hay fallo)
+    Capturas de error:
+        1. Si es numerico
+        2. Si se puede convertir a numero
+        3. Si no es menor que cero
+    '''
+    
+    import math as mates
+    #comprovar si son numeros
+    print("Entramos los datos a la funcion")
+    
+    if isinstance(numero, (int,float,complex)):
+        print("Parece que el paramentro es numerico")
+        #comprovaremos si es mayor o igal que cero
+        
+        if numero>=0:
+            print("Se puede hacer la raiz")
+            resultado=mates.sqrt(numero)
+        else:
+            print("No puedo hacer la raiz porque es negativo")
+            resultado=0
+        return resultado
+    
+    else:
+        
+        print("El parametro no es un numero, voy a intentar convertirlo")
+        #convertimos numeros en cadenas de texto a valores numerales
+        
+        try:
+            print("Intento convertirlo en un numero")
+            numero=float(numero)
+            resultado=mates.sqrt(numero)
+            return resultado
+        except:
+            print("No he podido convertirlo a numero")
+            return 0
+
+#Ejemplos de error con "a", 0 y "3" en el divisor    
+print(hazRaiz("a"))
+''' 
+
+Y esto seria el uso de la funcion en otro documento con casos de ejemplo
+'''
+from EjercicioRaizSegura import hazRaiz
+
+print(hazRaiz("a"))
+
+print(hazRaiz(4))
+
+print(hazRaiz("7"))
+
+print(hazRaiz(-5))
+
+print(hazRaiz("-6"))
+'''
+
+4.
+En conclusion es muy importante tener en cuenta que el ususario puede equivocarse o buscar el error y debemos
+crear un codigo que este preparado para todos esos casos. 
+

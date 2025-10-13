@@ -1,0 +1,95 @@
+1.
+Las estructuras de control nos permiten ejecutar diferentes linias de codigo
+de forma condicional, es decir, la ejecucion de esas linias esta sujeta a la
+comparacion de unos valores con otros.
+
+Esto sirve para elegir que partes del codigo se aplican segun la situacion
+
+2.
+Para introducir una condicion usamos la funcion if
+```
+if condicion:
+   codigo a ajecutar
+```
+El codigo solo se ejecutara en caso de que la condicions ea verdadera,
+por el contrario si es falsa pasara otra cosa que podemos definir con la
+funcion else.
+```
+if condicion:
+   codigo a ejecutar
+   (caso verdadero)
+else:
+   codigo a ejecutar
+   (caso falso)
+```
+Para casos en los que tenemos mas de una resolucion para la condicon existe la 
+funcion elif (else if). Esta funcion permite poner mas posibles casos que se
+pueden llegar a dar y el codigo en respuesta.
+El else tambien se puede usar, solo ejecutandose cuando no se cumpla ninguna de
+las otras condiciones.
+```
+if condicon1:
+   codigo a ejecutar1
+elif codicion2
+   codigo a ejecutar2
+else:
+   codigo a ejecutar
+```
+
+3.
+'''
+'''
+Programa clasificador de baloncesto
+v0.1 Rodrigo Menendez Molina
+El programa clasifica categorias por edades
+'''
+
+#No hya importaciones
+
+#Declaracion de variables
+edad=0
+categoria=""
+
+#No hay funciones/clases
+
+#Funcion principal
+
+edad=int(input("Edad: "))
+
+if edad<8:
+    categoria="pre-mini"
+
+elif 8>=edad<=11:
+    categoria="mini"
+
+elif 12>=edad<15:
+    categoria="infantil"
+
+elif 16>=edad<17:
+    categoria="cadete"
+
+elif 18>=edad<20:
+    categoria="junior"
+
+else:
+    categoria="senior"
+
+print("Tienes",edad,"años y tu categoria es",categoria)
+
+if edad>40:
+    print("Vetereano con experiencia")
+'''
+
+4.
+En resumen las funciones condicionales if, elif y else son muy utiles para
+poner condiciones y poder ejecutar diferentes partes del codigo segun si
+se cumple o no unas condiciones.
+
+
+
+
+
+
+
+
+
