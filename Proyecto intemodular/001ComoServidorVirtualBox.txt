@@ -1,0 +1,6 @@
+
+Recomiendo usar la virtual vox para ejectura los preograms
+
+Para ejecutar:
+Dentro de la carpeta del programa abrimos la terminal y ponemos python3 NombrePrograma
+Si abrimos un servidor entramos en un buscador y ponemos la ¿ip?
