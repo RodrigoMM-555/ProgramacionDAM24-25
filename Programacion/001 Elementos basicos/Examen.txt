@@ -1,0 +1,67 @@
+
+En esta primera unidad hemos visto gran variedad de elementos básicos como variables, operadores de distintos tipos, formas de pedir la información al usuario y constantes que pese a no existir en Python simulamos su comportamiento.
+
+Ejemplos de estas prácticas podrían ser las siguientes líneas de código
+Pedir una edad al usuario y almacenarla en una variable:
+````
+edad = input(“Dame tu edad:”)
+````
+
+Convertir un dato a un tipo distinto, como un str, int o float:
+````
+precio = float(precio)
+````
+
+Simular una constante, pues en Python no existen:
+````
+GRAVEDAD = 9.8
+````
+
+Y operadores de suma, resta, etc:
+````
+suma = n1 + n2
+multiplicación = n1 * n2
+resta = n1 - n2
+````
+
+Un ejemplo práctico de todos estos elementos en conjunto sería la actividad propuesta:
+````
+'''
+Rodrigo Menéndez Molina
+factura_con_iva_descuento v0.1
+Factura con IVA y descuento según precio
+'''
+
+#Constantes
+IVA = 0.21
+DESCUENTO = 10
+
+#Variables pedidas al cliente
+nombre_cliente = input("Dame tu nombre: ")
+precio_bruto = float(input("Dame el precio bruto del producto: "))
+
+#Calculos de IVA
+iva_aplicado = precio_bruto * IVA
+subtotal_con_iva = iva_aplicado + precio_bruto
+
+#Aplicacion o no del descuento
+if precio_bruto >= 50:
+    total = subtotal_con_iva - DESCUENTO
+    descuento_muestra = DESCUENTO
+else:
+    total = subtotal_con_iva
+    descuento_muestra = 0
+
+#Salida de datos
+print("\n-------- Factura --------")
+print("Nombre:",nombre_cliente)
+print("Precio bruto:",precio_bruto,"€")
+print("IVA aplicado:",iva_aplicado,"€")
+print("Descuento aplicado:",descuento_muestra,"€")
+print("Total",total,"€")
+print("-------------------------")
+````
+
+Pese a no ver la estructura condicional if y else en esta unidad, me parecía útil y necesaria aplicarla para poder llevar a cabo el código de manera limpia y cohesionada.
+
+En conclusión, estos elementos, pese a no tener ninguna complejidad, son las bases para todos los cálculos y asignaciones de valores de nuestros programas, siendo muy difícil avanzar en esta materia sin conocerlos y dominarlos.
