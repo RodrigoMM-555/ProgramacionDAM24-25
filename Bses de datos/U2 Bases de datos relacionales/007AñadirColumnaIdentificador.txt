@@ -15,12 +15,16 @@ FIRST = Esta debe ser la primera en caso de haber varias columnasç
 
 DESCRIBE clientes;	#Para ver si lo hemos ehcho bien
 
-INSERT into clientes VALUES(	#Por mucho que se repitan los datos el identificador
-	NULL,			 es distinto y nunca se repetira, incluso si borramos
-	"12345678A",		 el anterior. Pese a que tenga null el programa se 
-	"Rodrigo",		 encarga de poner el numero.
+#Por mucho que se repitan los datos el identificador
+es distinto y nunca se repetira, incluso si borramos
+el anterior. Pese a que tenga null el programa se 
+encarga de poner el numero.
+
+INSERT INTO clientes VALUES(
+	NULL,
+	"12345678A",
+	"Rodrigo",
 	"Menendez",
-	"aja@gmail.com"
-);
-
-
+	"aja@gmail.com",
+	"maestro"
+);	
