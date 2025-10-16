@@ -15,3 +15,6 @@ linia = archivo.readline()
 print(linia)
 
 archivo.close()
+
+
+#En visual estudio los archivos deben estar en la raiz del proyecto, la carpeta de mas afuera.
