@@ -1,0 +1,11 @@
+            /*
+            selector{              Esto es un comentario con pseudocidog para ver la estructura
+            atributo:valor;
+            atributo:valor;
+            atributo:valor;
+            ...
+            }
+            */
+            h3{
+                color:green;     /*Esto ya es codigo de css interno, medianamete recomendable, se prefiere el externo*/
+            }

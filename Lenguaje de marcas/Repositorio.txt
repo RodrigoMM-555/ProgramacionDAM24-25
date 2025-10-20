@@ -6,3 +6,4 @@ https://github.com/jocarsa/basededatosdamdaw2526
 colores.jocarsa.com
 dafont.com
 static.jocarsa.com
+flexbox.jocarsa.com
