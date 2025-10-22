@@ -10,3 +10,5 @@ for linea in lineas:
         print("Encontrado!:",linea)
 
 close.archivo()
+
+#Buscara lo que le diga el ususario

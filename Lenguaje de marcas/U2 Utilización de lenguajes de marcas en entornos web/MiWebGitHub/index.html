@@ -61,7 +61,7 @@
                 padding: 0px;               /*Anula el margen interior por defecto*/
                 display: flex;              /*Esto lo pone en linea en vez de en lista vertical*/
                 justify-content: center;    /*Esto lo centra, hay mas modos que se pueden ver en flexbox.jocarsa.com*/
-                gap: 10px                   /*Distancia entre los elementos de la lista en horizontal*/
+                gap: 1px                   /*Distancia entre los elementos de la lista en horizontal*/
             }
             nav ul li a{
                 text-decoration: none;              /*Anula los estilos de subrayado*/
@@ -69,7 +69,10 @@
                 background-color: turquoise;      /*El fondo de la letra turquesa*/
                 padding: 5px;                       /*MArgen interno*/
                 font-size: 15px;                     /*Tamaño de la fuente*/
-                text-transform: capitalize;         /*MAyusculas*/
+                text-transform:uppercase;            /* Texto va en mayusculas */
+                display:block;                      /* Permito a los elementos que sean bloques */
+                width:80px;                         /* Su anchura es de 60 pixeles */
+                text-align:center;                  /* Alineo el texto al centro */
             }
 
              /*Con esto evitamos ques imagenes se salgan, asi no hya que poner los px manualmente*/
@@ -92,7 +95,7 @@
             }
             .bloque p{
                 flex: 1;
-                font-size: 10px;
+                font-size: 13px;
                 text-align: justify;
             }
             #desarrollo .bloque{
@@ -124,7 +127,7 @@
         <header>
             <!--Esto es la cabecera de la pagina-->>
             <h1>Rodrigo Menendez Molina</h1>            <!--Hay hasta h6-->   <!--<h1 style="color:red>Hola</h1>El css en linea no es recomendado, peo lo usaremos por conveniencia en calse-->
-            <h2>Estudiante, jugador, programador</h2>
+            <h2>Estudiante, jugador y programador</h2>
 
             <nav>                                                           <!--Esto es un menu de navegacion, no siempre tiene que ir en la cabecera, pero es costumbre-->
                 <ul>                                                        <!--ul e spara una lista-->
