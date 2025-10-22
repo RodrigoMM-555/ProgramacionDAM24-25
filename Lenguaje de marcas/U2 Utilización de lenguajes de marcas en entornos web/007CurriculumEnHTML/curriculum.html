@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Curriculum</title>
+        <meta charset="utf-8">
+        <style>
+            html{background-color: gray;font-family: sans-serif;font-size: 13px;}
+            body{
+                width: 600px; background-color: ghostwhite; 
+                margin: auto;display: flex;}
+            #izquierda img{width: 100%;}
+            #izquierda{
+                flex: 2; background-color: turquoise;padding: 20px;}
+            #derecha{flex:4; padding: 15px;}
+            #derecha article img{width: 20%; height: 20%;}
+            #derecha article{display: flex; align-items: center; gap: 20px;}
+            #derecha article *{padding: 0px;margin: 3px;}           /*Esto modifica los amrgenes que hay en las iamgenes y textos*/
+            /*El asterisco quiere decir que se aplica a todos los elemento que se encuentre dentro de esa unidad*/
+        </style>
+    </head>
+    
+    <body>
+        <section id="izquierda">
+            <img src="Captura.png" alt="Yo">
+            <article>                       <!--Plantilla de un articulo, como por ejemplo contatctos o aptitudes-->
+                <h3>Titulo</h3>
+                <ul>
+                    <li>Elemento1</li>
+                    <li>Elemento2</li>
+                    <li>Elemento3</li>
+                    <li>Elemento4</li>
+                    <li>Elemento5</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Titulo</h3>
+                <ul>
+                    <li>Elemento1</li>
+                    <li>Elemento2</li>
+                    <li>Elemento3</li>
+                    <li>Elemento4</li>
+                    <li>Elemento5</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Titulo</h3>
+                <ul>
+                    <li>Elemento1</li>
+                    <li>Elemento2</li>
+                    <li>Elemento3</li>
+                    <li>Elemento4</li>
+                    <li>Elemento5</li>
+                </ul>
+            </article>
+        </section>
+        
+        <section id="derecha">
+            <h1>Rodrigo Menendez Molina</h1>
+            <h2>Estudiante y desarrollador</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit montes eros lobortis, curabitur ultricies libero 
+                tempor mi phasellus sed sociosqu. Donec pulvinar himenaeos magna hendrerit cras nullam sociosqu imperdiet 
+                scelerisque, egestas cursus natoque in est consequat dui vitae, parturient volutpat ornare torquent eleifend quam 
+                mattis velit. Elementum potenti cubilia mollis mus imperdiet sociis ante, magna vulputate volutpat ultrices nam class natoque 
+                id, eu tempus dui pellentesque per dictumst convallis, congue conubia in rhoncus vestibulum eleifend.</p>
+            
+            </div>
+            <div id="formacion">
+                <h3>Formacion</h3>
+                <article>
+                    <img src="pingutrabajando.jpg" alt="en progrso">
+                    <div class="texto">
+                        <h4>Estudios</h4>
+                        <h5>inico - final- instituto</h5>
+                    </div>
+                </article>
+                <article>
+                    <img src="pingutrabajando.jpg" alt="en progrso">
+                    <div class="texto">
+                        <h4>Estudios</h4>
+                        <h5>inico - final- instituto</h5>
+                    </div>
+                </article>
+            </div>
+            
+            <div id="experiencia">
+            <h3>Experiencia profesional</h3>
+            <article>
+                <img src="pingutrabajando.jpg" alt="en progrso">
+                <div class="texto">
+                    <h4>Puesto</h4>
+                    <h5>inico - final- empresa</h5>
+                    <p>Descripcion del puesto</p>
+                </div>
+            </article>
+            <article>
+                <img src="pingutrabajando.jpg" alt="en progrso">
+                <div class="texto">
+                    <h4>Puesto</h4>
+                    <h5>inico - final- empresa</h5>
+                    <p>Descripcion del puesto</p>
+                </div>
+            </article>
+
+        </section>
+    </body>
+</html>

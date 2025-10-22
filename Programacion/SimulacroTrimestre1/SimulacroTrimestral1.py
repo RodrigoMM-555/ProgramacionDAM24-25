@@ -1,14 +1,24 @@
 
+import pickle
+
 class Cliente():
     def __init__(self,nombre,apellidos,email):
         self.nombre = nombre
         self.apellidos = apellidos
         self.email = email
 
+print("------------------------------------")
 print("##### Gestion de clientes v0.1 #####")
 print("##### Rodrigo Menendez Molina  #####")
 
 clientes = []
+
+try:
+    archivo = open("clientes.bin","rb")
+    clientes = pickle.load(archivo)
+    archivo.close()
+except:
+    print("No existen datos anteriores")
 
 while True:
     print("------------------------------------")
@@ -56,4 +66,12 @@ while True:
             print("Cancelado")
 
         else:
-            ("Opcion no valida")
+            print("Opcion no valida")
+    
+    else:
+        break
+    
+    archivo = open("clientes.bin","wb")
+    pickle.dump(clientes,archivo)           #Este ,archivo es para indicar donde dumpear la informacion
+    archivo.close()
+ 
